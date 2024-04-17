@@ -1,0 +1,123 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/verticalLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="64dp"
+        android:layout_marginTop="32sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_cabecera"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginBottom="72dp"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/texto1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColorHint="@color/black"
+            android:hint="Ingrese el numero 1"
+            android:textColor="@color/black"
+            android:layout_marginBottom="72sp"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/texto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColorHint="@color/black"
+            android:hint="Ingrese el numero 2"
+            android:layout_marginBottom="60sp"
+
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Resultado"
+            android:textColorHint="@color/black"
+            android:textAlignment="center"
+            android:text=""
+            android:layout_marginLeft="45sp"
+            android:layout_marginRight="45sp"
+            android:textColor="@color/black"
+            android:paddingTop="32sp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/verticalLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="4sp"
+        android:layout_marginRight="4sp"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btnRestar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2sp"
+            android:backgroundTint="@color/black"
+            android:text="@string/btn_restar"
+            android:textSize="8sp"/>
+
+        <Button
+            android:id="@+id/btnMulti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2sp"
+            android:layout_marginEnd="2sp"
+            android:backgroundTint="@color/black"
+            android:text="@string/btn_multi"
+            android:textSize="8sp"/>
+
+        <Button
+            android:id="@+id/btnDiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2sp"
+            android:layout_marginEnd="2sp"
+            android:backgroundTint="@color/black"
+            android:text="@string/btn_dividir"
+            android:textSize="8sp"/>
+
+        <Button
+            android:id="@+id/btnSumar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2sp"
+            android:backgroundTint="@color/black"
+            android:text="@string/btn_suma"
+            android:textSize="8sp"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

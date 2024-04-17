@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CalculatorAutonoma</string>
+    <string name="titulo_cabecera">Calculadora</string>
+    <string name="btn_suma">Suma</string>
+    <string name="btn_restar">Restar</string>
+    <string name="btn_multi">Multiplicar</string>
+    <string name="btn_dividir">Dividir</string>
+</resources>
